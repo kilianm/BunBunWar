@@ -1,0 +1,28 @@
+// Ogre overlay scripts
+BunBunConsole/ConsoleOverlay
+{
+	zorder 500
+	// Stats block
+	container BorderPanel(BunBunConsole/ConsolePanel)
+	{
+		metrics_mode pixels
+		vert_align top
+		left 5 
+		top 5
+		width 750
+		height 30
+		
+		element TextArea(BunBunConsole/ConsoleText)
+		{
+			metrics_mode pixels
+			left 5
+			top 5
+			width 750
+			height 30
+			font_name BlueHighway
+			char_height 19
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+	}
+}

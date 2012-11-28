@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utilities", "Utilities\Utilities.vcproj", "{719E1120-468F-4C59-AF89-F9C8F8D9D574}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GOD-Engine", "GOD-Engine\GOD-Engine.vcproj", "{D32A5078-C309-43E8-A666-974DEA2EFD34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{719E1120-468F-4C59-AF89-F9C8F8D9D574} = {719E1120-468F-4C59-AF89-F9C8F8D9D574}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreLayer", "OgreLayer\OgreLayer.vcproj", "{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BunBunWar", "BunBunWar\BunBunWar.vcproj", "{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreGODEngine", "OgreGODEngine\OgreGODEngine.vcproj", "{6A8E28CC-D372-427A-93C4-4F0DD099226B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{719E1120-468F-4C59-AF89-F9C8F8D9D574}.Debug.ActiveCfg = Debug|Win32
+		{719E1120-468F-4C59-AF89-F9C8F8D9D574}.Debug.Build.0 = Debug|Win32
+		{719E1120-468F-4C59-AF89-F9C8F8D9D574}.Release.ActiveCfg = Release|Win32
+		{719E1120-468F-4C59-AF89-F9C8F8D9D574}.Release.Build.0 = Release|Win32
+		{D32A5078-C309-43E8-A666-974DEA2EFD34}.Debug.ActiveCfg = Debug|Win32
+		{D32A5078-C309-43E8-A666-974DEA2EFD34}.Debug.Build.0 = Debug|Win32
+		{D32A5078-C309-43E8-A666-974DEA2EFD34}.Release.ActiveCfg = Release|Win32
+		{D32A5078-C309-43E8-A666-974DEA2EFD34}.Release.Build.0 = Release|Win32
+		{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}.Debug.ActiveCfg = Debug|Win32
+		{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}.Debug.Build.0 = Debug|Win32
+		{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}.Release.ActiveCfg = Release|Win32
+		{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}.Release.Build.0 = Release|Win32
+		{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}.Debug.ActiveCfg = Debug|Win32
+		{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}.Debug.Build.0 = Debug|Win32
+		{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}.Release.ActiveCfg = Release|Win32
+		{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}.Release.Build.0 = Release|Win32
+		{6A8E28CC-D372-427A-93C4-4F0DD099226B}.Debug.ActiveCfg = Debug|Win32
+		{6A8E28CC-D372-427A-93C4-4F0DD099226B}.Debug.Build.0 = Debug|Win32
+		{6A8E28CC-D372-427A-93C4-4F0DD099226B}.Release.ActiveCfg = Release|Win32
+		{6A8E28CC-D372-427A-93C4-4F0DD099226B}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

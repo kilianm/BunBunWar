@@ -1,0 +1,56 @@
+// Ogre overlay scripts
+BunBunGui/GuiOverlay
+{
+	zorder 500
+	container Panel(BunBunGui/BackgroundPanel)
+	{	
+		horz_align left
+		vert_align top
+		left 0
+		width 1
+		top 0.821666667
+		height 0.178333333
+		material BunBunGui/BackgroundPanel
+	}
+	zorder 300
+	container Panel(BunBunGui/PausePanel)
+	{	
+		horz_align left
+		vert_align top
+		left 0.0075
+		width 0.09375
+		top 0.843333333
+		height 0.041666667
+		material BunBunGui/PausePanel
+	}	
+	container Panel(BunBunGui/OptionsPanel)
+	{	
+		horz_align left
+		vert_align top
+		left 0.0075
+		width 0.09375
+		top 0.893333333
+		height 0.041666667
+		material BunBunGui/OptionsPanel
+	}	
+	container Panel(BunBunGui/QuitPanel)
+	{	
+		horz_align left
+		vert_align top
+		left 0.0075
+		width 0.09375
+		top 0.943333333
+		height 0.041666667
+		material BunBunGui/QuitPanel
+	}
+	container Panel(BunBunGui/LogoPanel)
+	{	
+		horz_align left
+		vert_align top
+		left 0.10875
+		width 0.170625
+		top 0.844166667
+		height 0.14
+		material BunBunGui/LogoPanel
+	}
+}

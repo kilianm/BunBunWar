@@ -1,0 +1,135 @@
+material BunBun/Logo
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+			depth_check off
+
+			texture_unit
+			{
+				texture bbwar.png
+			}
+		}
+	}
+}
+
+material BunBun/SpaceSkyBox
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture spaceskybox.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+material BunBun/RustySteel
+{
+	technique
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture RustySteel.jpg
+			}
+		}
+	}
+}
+material BunBun/Rock
+{
+	technique
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture terr_rock6.jpg
+			}
+		}
+	}
+}
+material BunBun/BumpyMetal
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture BumpyMetal.jpg
+			}
+		}
+	}
+}
+material Examples/Robot
+{
+	// Hardware skinning technique
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture r2skin.jpg
+			}
+		}
+	}
+
+	// Software blending technique
+	technique
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture r2skin.jpg
+			}
+		}
+	}
+}
+
+material BunBun/GrassFloor
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture grass_1024.jpg
+			}
+		}
+	}
+}
+
+material BunBun/GrassFloorSmall
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture grass_128.jpg
+			}
+		}
+	}
+}

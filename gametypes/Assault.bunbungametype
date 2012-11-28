@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BunBunWar>
+	<gametype name="Assault" pathfinder="Assault" alwaysOnAttack="true" attackOnBlock="false" disappearOnFinish="true" />
+</BunBunWar>

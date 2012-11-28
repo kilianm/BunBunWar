@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="root">
+        <Window Type="TaharezLook/FrameWindow" Name="BunBunMissionGUI">
+            <Property Name="UnifiedPosition" Value="{{0.0,0},{0.75,0}}" />
+            <Property Name="UnifiedSize" Value="{{1.0,0},{0.25,0}}" />
+			<Property Name="CloseButtonEnabled" Value="False" />
+		<Property Name="SizingEnabled" Value="False" />
+		<Property Name="DragMovingEnabled" Value="False" />
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Window Type="TaharezLook/Button" Name="BunBunMissionGUI/Button/Pause">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.1,0},{0.20,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0,7},{0.4,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.1,0},{0.18,0}}" />
+                <Property Name="Text" Value="Pause" />
+            </Window>
+			<Window Type="TaharezLook/Button" Name="BunBunMissionGUI/Button/MainMenu">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.1,0},{0.2,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0,7},{0.6,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.1,0},{0.18,0}}" />
+                <Property Name="Text" Value="Main Menu" />
+				<Property Name="Disabled" Value="True" />
+            </Window>
+			<Window Type="TaharezLook/Button" Name="BunBunMissionGUI/Button/Quit">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.1,0},{0.20,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0,7},{0.8,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.1,0},{0.18,0}}" />
+                <Property Name="Text" Value="Quit" />
+            </Window>
+			<Window Type="TaharezLook/StaticImage" Name="BunBunMissionGUI/Logo">
+                <Property Name="VerticalAlignment" Value="Top" />
+				<Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="UnifiedMaxSize" Value="{{0.35,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0,-3},{0.13,0}}" />
+				<Property Name="UnifiedSize" Value="{{0.35,0},{0.86,0}}" />
+				<Property Name="AutoResizeEnabled" Value="True" />
+				<Property Name="FrameEnabled" Value="False" />
+				<Property Name="BackgroundEnabled" Value="False" />
+				<Property Name="Image" Value="set:BunBunWar image:BunBunLogo" />
+            </Window>
+			<Window Type="TaharezLook/StaticText" Name="BunBunMissionGUI/Text/Health">
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="VerticalAlignment" Value="TOP" />
+                <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.12,0},{0.2,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.25,0},{0.2,0}}" />
+            </Window>
+			<Window Type="TaharezLook/StaticText" Name="BunBunMissionGUI/Text/Armor">
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="VerticalAlignment" Value="TOP" />
+                <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.12,0},{0.4,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.25,0},{0.2,0}}" />
+            </Window>
+			<Window Type="TaharezLook/StaticText" Name="BunBunMissionGUI/Text/AttackPower">
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="VerticalAlignment" Value="TOP" />
+                <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.12,0},{0.6,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.25,0},{0.2,0}}" />
+            </Window>
+			<Window Type="TaharezLook/StaticText" Name="BunBunMissionGUI/Text/Price">
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="VerticalAlignment" Value="TOP" />
+                <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.12,0},{0.8,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.25,0},{0.2,0}}" />
+            </Window>
+			<Window Type="TaharezLook/Button" Name="BunBunMissionGUI/Button/BuildTower">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.25,0},{0.20,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.4,0},{0.2,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.24,0},{0.18,0}}" />
+                <Property Name="Text" Value="Build Tower" />
+            </Window>
+			<Window Type="TaharezLook/Button" Name="BunBunMissionGUI/Button/UpgradeTower">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.25,0},{0.20,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.4,0},{0.4,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.24,0},{0.18,0}}" />
+                <Property Name="Text" Value="Upgrade Tower" />
+				<Property Name="Disabled" Value="True" />
+            </Window>
+			<Window Type="TaharezLook/Button" Name="BunBunMissionGUI/Button/DeleteTower">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.25,0},{0.20,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.4,0},{0.6,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.24,0},{0.18,0}}" />
+                <Property Name="Text" Value="Sell Tower" />
+				<Property Name="Disabled" Value="True" />
+            </Window>
+        </Window>
+		<Window Type="TaharezLook/FrameWindow" Name="BunBunMissionPopup">
+			<Property Name="UnifiedPosition" Value="{{0.25,0},{0.4,0}}" />
+            <Property Name="UnifiedSize" Value="{{0.5,0},{0.15,0}}" />
+			<Property Name="CloseButtonEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+		<Property Name="SizingEnabled" Value="False" />
+		<Property Name="DragMovingEnabled" Value="False" />
+			<Property Name="AlwaysOnTop" Value="True" />
+			<Window Type="TaharezLook/StaticText" Name="BunBunMissionPopup/Text/Text">
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="VerticalAlignment" Value="TOP" />
+				<Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.1,0},{0.25,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.8,0},{0.25,0}}" />
+            </Window>
+			<Window Type="TaharezLook/Button" Name="BunBunMissionPopup/Button/Close">
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedMaxSize" Value="{{0.5,0},{0.4,0}}" />
+                <Property Name="UnifiedPosition" Value="{{0.25,0},{0.6,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0},{0.25,0}}" />
+                <Property Name="Text" Value="Close" />
+            </Window>
+		</Window>
+    </Window>
+</GUILayout>

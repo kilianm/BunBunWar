@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="root">
+        <Window Type="TaharezLook/FrameWindow" Name="BunBunMenuGUI">
+            <Property Name="UnifiedPosition" Value="{{0.3,0},{0.2,0}}" />
+            <Property Name="UnifiedSize" Value="{{0.4,0},{0.6,0}}" />
+		<Property Name="CloseButtonEnabled" Value="False" />
+		<Property Name="SizingEnabled" Value="False" />
+		<Property Name="DragMovingEnabled" Value="False" />
+		<Property Name="Text" Value="BunBunWar - Main Menu" />
+		<Window Type="TaharezLook/StaticImage" Name="BunBunMenuGUI/Logo">
+		    <Property Name="HorizontalAlignment" Value="Left" />
+     	          <Property Name="VerticalAlignment" Value="Top" />
+     	          <Property Name="UnifiedPosition" Value="{{0.07,0},{0.05,0}}" />
+		    <Property Name="UnifiedSize" Value="{{0.86,0},{0.35,0}}" />
+		    <Property Name="AutoResizeEnabled" Value="True" />
+		    <Property Name="FrameEnabled" Value="False" />
+		    <Property Name="BackgroundEnabled" Value="False" />
+		    <Property Name="Image" Value="set:BunBunWar image:BunBunLogo" />
+            </Window>
+		<Window Type="TaharezLook/Button" Name="BunBunMenuGUI/Button/StartGame">
+     	          <Property Name="HorizontalAlignment" Value="Center" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="UnifiedPosition" Value="{{0.25,0},{-0.35,0}}" />
+     	          <Property Name="UnifiedSize" Value="{{0.5,0},{0.1,0}}" />
+           	    <Property Name="Text" Value="Start Game" />
+            </Window>
+		<Window Type="TaharezLook/Button" Name="BunBunMenuGUI/Button/Options">
+     	          <Property Name="Disabled" Value="True" />
+     	          <Property Name="HorizontalAlignment" Value="Left" />
+           	    <Property Name="VerticalAlignment" Value="Bottom" />
+     	          <Property Name="UnifiedPosition" Value="{{0.25,0},{-0.2,0}}" />
+           	    <Property Name="UnifiedSize" Value="{{0.5,0},{0.1,0}}" />
+                <Property Name="Text" Value="Options" />
+     	      </Window>
+		<Window Type="TaharezLook/Button" Name="BunBunMenuGUI/Button/Quit">
+                <Property Name="HorizontalAlignment" Value="Left" />
+     	          <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="UnifiedPosition" Value="{{0.25,0},{-0.05,0}}" />
+     	          <Property Name="UnifiedSize" Value="{{0.5,0},{0.1,0}}" />
+           	    <Property Name="Text" Value="Quit" />
+            </Window>
+	    </Window>
+	<Window Type="TaharezLook/FrameWindow" Name="BunBunMenuStartGame">
+            <Property Name="UnifiedPosition" Value="{{0.15,0},{0.15,0}}" />
+            <Property Name="UnifiedSize" Value="{{0.7,0},{0.7,0}}" />
+		<Property Name="CloseButtonEnabled" Value="False" />
+		<Property Name="Visible" Value="False" />
+		<Property Name="SizingEnabled" Value="False" />
+		<Property Name="DragMovingEnabled" Value="false" />
+		<Property Name="AlwaysOnTop" Value="True" />
+		<Property Name="Text" Value="Start Game" />
+		<Window Type="TaharezLook/Combobox" Name="BunBunMenuStartGame/ComboBox/GameType">
+		    <Property Name="ReadOnly" Value="True" />
+                <Property Name="HorizontalAlignment" Value="Left" />
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedPosition" Value="{{0.1,0},{0.1,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.8,0},{0.1,0}}" />
+		    <Property Name="Text" Value="> Select Game Type" />
+		    <Property Name="ClippingByParent" Value="False" />
+            </Window>
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/Text/Map">
+                <Property Name="HorizontalAlignment" Value="Left" />
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedPosition" Value="{{0.05,0},{0.2,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0},{0.1,0}}" />
+		    <Property Name="Text" Value="Select Map:" />
+            </Window>
+		<Window Type="TaharezLook/Listbox" Name="BunBunMenuStartGame/Listbox/Map">
+		    <Property Name="ReadOnly" Value="True" />
+                <Property Name="HorizontalAlignment" Value="Left" />
+                <Property Name="VerticalAlignment" Value="Top" />
+                <Property Name="UnifiedPosition" Value="{{0.05,0},{0.3,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.6,0},{0.5,0}}" />
+            </Window>
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/MapInfo/Name/Key">
+	          	<Property Name="HorizontalAlignment" Value="Left" />
+	          	<Property Name="VerticalAlignment" Value="Top" />
+	          	<Property Name="BackgroundEnabled" Value="False" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+	          	<Property Name="UnifiedPosition" Value="{{0.65,0},{0.3,0}}" />
+	          	<Property Name="UnifiedSize" Value="{{0.1,0},{0.1,0}}" />
+		    	<Property Name="Text" Value="Name:" />
+		</Window>
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/MapInfo/Name/Value">
+	          	<Property Name="HorizontalAlignment" Value="Left" />
+	          	<Property Name="VerticalAlignment" Value="Top" />
+	          	<Property Name="BackgroundEnabled" Value="False" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+	          	<Property Name="UnifiedPosition" Value="{{0.75,0},{0.3,0}}" />
+	          	<Property Name="UnifiedSize" Value="{{0.25,0},{0.1,0}}" />
+		</Window>
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/MapInfo/Size/Key">
+	          	<Property Name="HorizontalAlignment" Value="Left" />
+	          	<Property Name="VerticalAlignment" Value="Top" />
+	          	<Property Name="BackgroundEnabled" Value="False" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+	          	<Property Name="UnifiedPosition" Value="{{0.65,0},{0.35,0}}" />
+	          	<Property Name="UnifiedSize" Value="{{0.1,0},{0.1,0}}" />
+		    	<Property Name="Text" Value="Size:" />
+		</Window>
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/MapInfo/Size/Value">
+	          	<Property Name="HorizontalAlignment" Value="Left" />
+	          	<Property Name="VerticalAlignment" Value="Top" />
+	          	<Property Name="BackgroundEnabled" Value="False" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+	          	<Property Name="UnifiedPosition" Value="{{0.75,0},{0.35,0}}" />
+	          	<Property Name="UnifiedSize" Value="{{0.25,0},{0.1,0}}" />
+		</Window>		
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/MapInfo/Lives/Key">
+	          	<Property Name="HorizontalAlignment" Value="Left" />
+	          	<Property Name="VerticalAlignment" Value="Top" />
+	          	<Property Name="BackgroundEnabled" Value="False" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+	          	<Property Name="UnifiedPosition" Value="{{0.65,0},{0.4,0}}" />
+	          	<Property Name="UnifiedSize" Value="{{0.1,0},{0.1,0}}" />
+		    	<Property Name="Text" Value="Lives:" />
+		</Window>
+		<Window Type="TaharezLook/StaticText" Name="BunBunMenuStartGame/MapInfo/Lives/Value">
+	          	<Property Name="HorizontalAlignment" Value="Left" />
+	          	<Property Name="VerticalAlignment" Value="Top" />
+	          	<Property Name="BackgroundEnabled" Value="False" />
+			<Property Name="FrameEnabled" Value="False" />
+			<Property Name="Visible" Value="False" />
+	          	<Property Name="UnifiedPosition" Value="{{0.75,0},{0.4,0}}" />
+	          	<Property Name="UnifiedSize" Value="{{0.25,0},{0.1,0}}" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="BunBunMenuStartGame/Button/Start">
+     	          <Property Name="Disabled" Value="True" />
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="UnifiedPosition" Value="{{-0.05,0},{-0.05,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0},{0.1,0}}" />
+                <Property Name="Text" Value="Start!" />
+            </Window>
+		<Window Type="TaharezLook/Button" Name="BunBunMenuStartGame/Button/Cancel">
+                <Property Name="HorizontalAlignment" Value="Right" />
+                <Property Name="VerticalAlignment" Value="Bottom" />
+                <Property Name="UnifiedPosition" Value="{{-0.3,0},{-0.05,0}}" />
+                <Property Name="UnifiedSize" Value="{{0.2,0},{0.1,0}}" />
+                <Property Name="Text" Value="Cancel" />
+            </Window>
+	</Window>
+	<Window Type="TaharezLook/StaticText" Name="BunBunAbout/Text">
+          <Property Name="HorizontalAlignment" Value="Right" />
+          <Property Name="VerticalAlignment" Value="Bottom" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedPosition" Value="{{0.0,0},{0.0,0}}" />
+          <Property Name="UnifiedSize" Value="{{0.25,0},{0.05,0}}" />
+	    <Property Name="Text" Value="By Kilian Marjew and Tony Zuur" />
+    </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BunBunWar>
+	<gametype name="TowerDefense" pathfinder="TowerDefense" alwaysOnAttack="false" attackOnBlock="true" disappearOnFinish="true" />
+</BunBunWar>

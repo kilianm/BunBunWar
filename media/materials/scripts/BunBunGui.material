@@ -1,0 +1,80 @@
+material BunBunGui/BackgroundPanel
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend one dest_colour 
+			depth_check off
+			texture_unit
+			{
+				texture bunbun-gui-background.png
+			}
+		}
+	}
+}
+material BunBunGui/QuitPanel
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend one dest_colour 
+			depth_check off
+			texture_unit
+			{
+				texture bunbun-gui-quit.png
+			}
+		}
+	}
+}
+material BunBunGui/OptionsPanel
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend one dest_colour 
+			depth_check off
+			texture_unit
+			{
+				texture bunbun-gui-options.png
+			}
+		}
+	}
+}
+material BunBunGui/PausePanel
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend one dest_colour 
+			depth_check off
+			texture_unit
+			{
+				texture bunbun-gui-pause.png
+			}
+		}
+	}
+}
+material BunBunGui/LogoPanel
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend one dest_colour 
+			depth_check off
+			texture_unit
+			{
+				texture bunbun-gui-logo.png
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BunBunWar>
+	<mission name="Example :)" money="100000" lives="50">
+		<owners>
+			<owner name="computer" value="0" />
+			<owner name="human" value="1" />
+		</owners>
+		<landscape width="10" height="30" >
+			<landscapeArea area="start">
+				<position x="2" y="1" />
+				<size width="8" height="1" />
+			</landscapeArea>
+			<landscapeArea area="finish">
+				<position x="1" y="30" />
+				<size width="10" height="1" />
+			</landscapeArea>
+			<landscapeArea area="blocked">
+				<position x="3" y="11" />
+				<size width="8" height="1" />
+			</landscapeArea>
+			<landscapeArea area="blocked">
+				<position x="3" y="2" />
+				<size width="1" height="6" />
+			</landscapeArea>
+		</landscape>
+		<unitTypes>
+			<unitType id="0" owner="computer">
+				<parameter attackpower="200" />
+				<parameter health="500" />
+				<parameter armor="400" />
+				<parameter critrate="5" />
+				<parameter missrate="5" />
+				<parameter attackspeed="1800" />
+				<parameter range="3" />
+				<parameter movement="1" />
+				<parameter upgrade="0" />
+				<parameter meshName="robot.mesh" />
+			</unitType>
+			<unitType id="0" owner="computer">
+				<parameter attackpower="300" />
+				<parameter health="1000" />
+				<parameter armor="500" />
+				<parameter critrate="6" />
+				<parameter missrate="5" />
+				<parameter attackspeed="1800" />
+				<parameter range="3" />
+				<parameter movement="1" />
+				<parameter upgrade="1" />
+				<parameter meshName="robot.mesh" />
+			</unitType>
+			<unitType id="0" owner="computer">
+				<parameter attackpower="500" />
+				<parameter health="1200" />
+				<parameter armor="800" />
+				<parameter critrate="5" />
+				<parameter missrate="5" />
+				<parameter attackspeed="1800" />
+				<parameter range="3" />
+				<parameter movement="1" />
+				<parameter upgrade="2" />
+				<parameter meshName="ogrehead.mesh" />
+			</unitType>
+			<unitType id="1" owner="human">
+				<parameter attackpower="100" />
+				<parameter health="1500" />
+				<parameter armor="1400" />
+				<parameter critrate="5" />
+				<parameter missrate="5" />
+				<parameter attackspeed="1800" />
+				<parameter range="3" />
+				<parameter price="1000" />
+				<parameter upgrade="0" />
+				<parameter meshName="ogrehead.mesh" />
+			</unitType>
+			<unitType id="1" owner="human">
+				<parameter attackpower="150" />
+				<parameter health="2500" />
+				<parameter armor="1400" />
+				<parameter critrate="6" />
+				<parameter missrate="5" />
+				<parameter attackspeed="1800" />
+				<parameter range="3" />
+				<parameter price="750" />
+				<parameter upgrade="1" />
+				<parameter meshName="ogrehead.mesh" />
+			</unitType>
+			<unitType id="1" owner="human">
+				<parameter attackpower="175" />
+				<parameter health="2500" />
+				<parameter armor="1400" />
+				<parameter critrate="6" />
+				<parameter missrate="4" />
+				<parameter attackspeed="1500" />
+				<parameter range="3" />
+				<parameter price="1000" />
+				<parameter upgrade="2" />
+				<parameter meshName="ogrehead.mesh" />
+			</unitType>
+		</unitTypes>
+		<waves>
+			<wave number="1" reward="1000" unitType="0" upgrade="0" amount="20" />
+			<wave number="2" reward="2000" unitType="0" upgrade="1" amount="20" />
+			<wave number="3" reward="3500" unitType="0" upgrade="2" amount="25" />
+		</waves>
+	</mission>
+</BunBunWar>
