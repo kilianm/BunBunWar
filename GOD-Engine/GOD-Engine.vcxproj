@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D32A5078-C309-43E8-A666-974DEA2EFD34}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin-debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\includes;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GODENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GOD-Engine.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GOD-Engine.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)GOD-Engine.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GODENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GOD-Engine.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)GOD-Engine.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.vcxproj">
+      <Project>{719e1120-468f-4c59-af89-f9c8f8d9d574}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GODEngine.cpp" />
+    <ClCompile Include="GODUtilConstructor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objects\GODArrowObject.cpp" />
+    <ClCompile Include="objects\GODGameTypeObject.cpp" />
+    <ClCompile Include="objects\GODItemObject.cpp" />
+    <ClCompile Include="objects\GODLandscapeAreaObject.cpp" />
+    <ClCompile Include="objects\GODLandscapeObject.cpp" />
+    <ClCompile Include="objects\GODMissionObject.cpp" />
+    <ClCompile Include="objects\GODPathObject.cpp" />
+    <ClCompile Include="objects\GODScriptObject.cpp" />
+    <ClCompile Include="objects\GODTempUnitObject.cpp" />
+    <ClCompile Include="objects\GODUnitModifierObject.cpp" />
+    <ClCompile Include="objects\GODUnitObject.cpp" />
+    <ClCompile Include="objects\GODUnitTypeObject.cpp" />
+    <ClCompile Include="objects\GODWaveObject.cpp" />
+    <ClCompile Include="control\GODAddEvents.cpp" />
+    <ClCompile Include="control\GODEvents.cpp" />
+    <ClCompile Include="control\GODLandscapeControl.cpp" />
+    <ClCompile Include="control\GODMissionControl.cpp" />
+    <ClCompile Include="control\GODUnitControl.cpp" />
+    <ClCompile Include="control\GODUnitTypeControl.cpp" />
+    <ClCompile Include="control\GODWaveControl.cpp" />
+    <ClCompile Include="calculations\GODAssaultPathFinder.cpp" />
+    <ClCompile Include="calculations\GODCombat.cpp" />
+    <ClCompile Include="calculations\GODPathFinder.cpp" />
+    <ClCompile Include="calculations\GODTowerDefensePathFinder.cpp" />
+    <ClCompile Include="xml\GODAttribute.cpp" />
+    <ClCompile Include="xml\GODAttributes.cpp" />
+    <ClCompile Include="xml\GODXMLMapping.cpp" />
+    <ClCompile Include="xml\GODXMLObject.cpp" />
+    <ClCompile Include="xml\GODXMLParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\includes\bunbunwar\GODEngine.h" />
+    <ClInclude Include="GODUtilConstructor.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\includes\bunbunwar\stdincludes.h" />
+    <ClInclude Include="control\GODAddEvents.h" />
+    <ClInclude Include="control\GODControl.h" />
+    <ClInclude Include="control\GODEvents.h" />
+    <ClInclude Include="control\GODLandscapeControl.h" />
+    <ClInclude Include="control\GODMissionControl.h" />
+    <ClInclude Include="control\GODUnitControl.h" />
+    <ClInclude Include="control\GODUnitTypeControl.h" />
+    <ClInclude Include="control\GODWaveControl.h" />
+    <ClInclude Include="objects\GODArrowObject.h" />
+    <ClInclude Include="objects\GODGameTypeObject.h" />
+    <ClInclude Include="objects\GODItemObject.h" />
+    <ClInclude Include="objects\GODLandscapeAreaObject.h" />
+    <ClInclude Include="objects\GODLandscapeObject.h" />
+    <ClInclude Include="objects\GODMissionObject.h" />
+    <ClInclude Include="objects\GODObject.h" />
+    <ClInclude Include="objects\GODObjects.h" />
+    <ClInclude Include="objects\GODPathObject.h" />
+    <ClInclude Include="objects\GODScriptObject.h" />
+    <ClInclude Include="objects\GODTempUnitObject.h" />
+    <ClInclude Include="objects\GODUnitModifierObject.h" />
+    <ClInclude Include="objects\GODUnitObject.h" />
+    <ClInclude Include="objects\GODUnitTypeObject.h" />
+    <ClInclude Include="objects\GODWaveObject.h" />
+    <ClInclude Include="calculations\GODAssaultPathFinder.h" />
+    <ClInclude Include="calculations\GODCalculations.h" />
+    <ClInclude Include="calculations\GODCombat.h" />
+    <ClInclude Include="calculations\GODPathFinder.h" />
+    <ClInclude Include="calculations\GODTowerDefensePathFinder.h" />
+    <ClInclude Include="xml\GODAttribute.h" />
+    <ClInclude Include="xml\GODAttributes.h" />
+    <ClInclude Include="xml\GODXML.h" />
+    <ClInclude Include="xml\GODXMLMapping.h" />
+    <ClInclude Include="xml\GODXMLObject.h" />
+    <ClInclude Include="xml\GODXMLObjectParser.h" />
+    <ClInclude Include="xml\GODXMLParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

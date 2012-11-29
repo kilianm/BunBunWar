@@ -33,8 +33,7 @@ public:
 	void decreasePunishment();
 	int getPunishment();
 protected:
-	template class DLLEXPORT std::allocator<GODUnitObject*>;
-	template class DLLEXPORT std::vector<GODUnitObject*, std::allocator<GODUnitObject*> >;
+
 private:
 	Utilities_GridLocation* location;
 	std::vector<GODUnitObject*> unitRange;
@@ -44,4 +43,6 @@ private:
 	bool locked;
 };
 
+	template class DLLEXPORT std::allocator<GODUnitObject*>;
+	template class DLLEXPORT std::vector<GODUnitObject*, std::allocator<GODUnitObject*> >;
 #endif

@@ -1,14 +1,17 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utilities", "Utilities\Utilities.vcxproj", "{719E1120-468F-4C59-AF89-F9C8F8D9D574}"
+# Visual C# Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utilities", "Utilities\Utilities.vcproj", "{719E1120-468F-4C59-AF89-F9C8F8D9D574}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GOD-Engine", "GOD-Engine\GOD-Engine.vcxproj", "{D32A5078-C309-43E8-A666-974DEA2EFD34}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GOD-Engine", "GOD-Engine\GOD-Engine.vcproj", "{D32A5078-C309-43E8-A666-974DEA2EFD34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{719E1120-468F-4C59-AF89-F9C8F8D9D574} = {719E1120-468F-4C59-AF89-F9C8F8D9D574}
+	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreLayer", "OgreLayer\OgreLayer.vcxproj", "{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreLayer", "OgreLayer\OgreLayer.vcproj", "{FE695AD7-77BD-4B24-AC30-EE2FC40540D3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BunBunWar", "BunBunWar\BunBunWar.vcxproj", "{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BunBunWar", "BunBunWar\BunBunWar.vcproj", "{F943EA0F-3190-44B4-8D50-6EBCD1E044C6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreGODEngine", "OgreGODEngine\OgreGODEngine.vcxproj", "{6A8E28CC-D372-427A-93C4-4F0DD099226B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreGODEngine", "OgreGODEngine\OgreGODEngine.vcproj", "{6A8E28CC-D372-427A-93C4-4F0DD099226B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

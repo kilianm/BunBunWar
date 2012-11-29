@@ -3,6 +3,7 @@
 GODXMLObject::GODXMLObject() {
 	this->attributes = NULL;
 	this->parent = NULL;
+	this->iter = this->childs.begin();
 }
 
 GODXMLObject::~GODXMLObject() {
@@ -45,16 +46,12 @@ std::vector<GODXMLObject*> GODXMLObject::getChilds() {
 }
 
 bool GODXMLObject::hasNextChild() {
-	if (iter == NULL) {
-		iter = this->childs.begin();
-	}
 	if (this->childs.size() == 0) {
 		return false;
 	}
 	if (iter != this->childs.end()) {
 		return true;
 	}
-	iter = this->childs.begin();
 	return false;
 }
 
@@ -63,10 +60,6 @@ GODXMLObject* GODXMLObject::nextChild() {
 		return NULL;
 	}
 	GODXMLObject* child = *iter;
-	if (iter == this->childs.end()) {
-		iter = NULL;
-	} else {
-		iter++;
-	}
+	iter++;
 	return child;
 }
